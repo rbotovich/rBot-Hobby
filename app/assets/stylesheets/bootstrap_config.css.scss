@@ -1,0 +1,62 @@
+@import 'bootstrap' ;
+
+$font-family-sans-serif: 'Oxygen' ;
+$font-size-base: 16px ;
+
+body {
+  padding: 20px;
+  background-size: cover;
+  background-image: image_url("space_girl_wallpaper.jpg");
+  background-repeat: no-repeat;
+
+  .navbar-right {
+
+  }
+
+  .panel-default {
+    font-weight: bold;
+    .form-group {
+
+      .label{
+        background-color: indianred;
+        opacity: 0.3 ;
+      }
+
+      .input {
+        opacity: 0.8 ;
+      }
+
+    }
+//    opacity: 0.1;
+  }
+}
+
+$navbar-inverse-bg: #34495e;
+$navbar-default-link-color: #9b59b6 ;
+$navbar-inverse-color: #9b59b6 ;
+
+$navbar-inverse-link-color:  #ecf0f1 ;
+
+
+
+.container-fluid {
+  position: relative;
+}
+
+
+.navbar-right {
+  color: #9b59b6;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-link {
+  font-weight: bold;
+}
+

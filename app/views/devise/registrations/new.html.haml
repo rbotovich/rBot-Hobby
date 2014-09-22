@@ -1,0 +1,14 @@
+.panel-default
+  .panel-heading
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = devise_error_messages!
+      .form-group
+        = f.label :email
+        = f.email_field :email, autofocus: true, class: "form-control"
+      .form-group
+        = f.label :password
+        = f.password_field :password, autocomplete: "off", class: "form-control"
+
+      .form-group
+        = f.submit "Sign up", class: "btn btn-default btn-lg"
+        = link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg"

@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    = favicon_link_tag 'favicon.ico'
+    %title rBot
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %meta.viewport{"content"=>"width=device-width, initial-scale=1.0"}
+    %span
+  %body
+    = render :partial => 'layouts/header'
+    .container
+      - flash.each do |type, msg|
+        %div{:class => "alert alert-#{type == :notice ? "success" : type} fadeout", "data-dismiss" => "alert"}
+          %button.close &times;
+          = msg if msg.is_a?(String)
+      = yield
