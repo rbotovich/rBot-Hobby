@@ -37,12 +37,17 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 ## development
-gem 'sqlite3'
-gem 'spring'
+group :development do
+  gem 'sqlite3'
+  gem 'spring'
+end
+
 
 ## production
-gem 'pg'
-gem 'rails_12factor'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
