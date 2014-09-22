@@ -3,7 +3,7 @@ ruby '2.1.2'
 
 gem 'rails', '4.1.4'
 gem 'sass-rails', '~> 4.0.3'
-herok
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
 gem 'spring'
